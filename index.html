@@ -14,6 +14,21 @@
       justify-content: center;
       align-items: center;
     }
+    #negative-button {
+      width: 100px;
+      height: 100px;
+      background-color: salmon;
+    }
+    #positive-button {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+    #home-button {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
   </style>
 </head>
 <body>
@@ -23,10 +38,14 @@
   </div>
   <script>
     const root = document.getElementById('root');
-    console.dir(root);
+    // console.dir(root);
 
     const negativeButton = document.getElementById('negative-button');
     const positiveButton = document.getElementById('positive-button');
+
+    negativeButton.addEventListener('click', () => {
+      
+    })
   </script>
 </body>
 </html>

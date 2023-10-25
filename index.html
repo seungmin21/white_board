@@ -68,7 +68,6 @@
       negativeButton.style.display = "none";
       positiveButton.style.display = "none";
       homeButton.style.display = "block";
-      //homeButton.style.backgroundColor = "skyblue";
     })
     
     // 긍정 버튼 클릭 시 기능
@@ -77,7 +76,14 @@
       negativeButton.style.display = "none";
       positiveButton.style.display = "none";
       homeButton.style.display = "block";
-      //homeButton.style.backgroundColor = "skyblue";
+    })
+
+    // 홈 버튼 클릭 시 기능
+    homeButton.addEventListener('click', () => {
+      ContentText.innerHTML = ''
+      negativeButton.style.display = "block";
+      positiveButton.style.display = "block";
+      homeButton.style.display = "none";
     })
 
   </script>

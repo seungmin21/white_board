@@ -72,6 +72,8 @@
       
       let element = document.createElement('button')
           element.textContent = "처음으로"
+          // id 작명시 유의사항 태그로 경로를 작성하는게 아니라
+          // 선언한 변수명으로 id 경로를 따야 참조 에러가 안난다.
           element.id = 'backButton';
         root.appendChild(element)
     })

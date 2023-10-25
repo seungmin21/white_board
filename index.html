@@ -35,6 +35,9 @@
     button {
       background-color: skyblue;
     }
+    #button-container {
+      display: flex;
+    }
   </style>
 </head>
 <body>
@@ -68,8 +71,8 @@
       // console.dir(homeButton);
       homeButton.addEventListener('click', () => {
         ContentText.innerHTML = '';
-        negativeButton.style.display = 'flex';
-        positiveButton.style.display = 'flex';
+        negativeButton.style.display = 'block';
+        positiveButton.style.display = 'block';
         homeButton.style.display = 'none';
       })
     })
@@ -77,8 +80,8 @@
     // 긍정 버튼 클릭 시 기능
     positiveButton.addEventListener('click', () => {
       ContentText.innerHTML = '<h1>아~ 그래요?</h1>'
-      negativeButton.style.display = "none";
-      positiveButton.style.display = "none";
+      negativeButton.style.display = "block";
+      positiveButton.style.display = "block";
       
       let element = document.createElement('button')
       element.textContent = "처음으로"

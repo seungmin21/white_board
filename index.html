@@ -16,21 +16,20 @@
       align-items: center;
     }
     #negative-button {
-      width: 120px;
-      height: 90px;
-      background-color: salmon;
+      width: 300px;
+      height: 120px;
       border-radius: 15px;
-      margin-right: 10px;
+      margin-right: 40px;
     }
     #positive-button {
-      width: 120px;
-      height: 90px;
+      width: 300px;
+      height: 120px;
       background-color: green;
       border-radius: 15px;
-      margin-left: 10px;
+      margin-left: 40px;
     }
     h1 {
-      font-size: 34px;
+      font-size: 100px;
     }
     #home-button {
       position: absolute;
@@ -66,10 +65,10 @@
     const positiveButton = document.getElementById('positive-button');
     const ContentText = document.getElementById('Content-text');
     const homeButton = document.getElementById('home-button');
-   
+
     // 부정 버튼 클릭 시 기능
     negativeButton.addEventListener('click', () => {
-      ContentText.innerHTML = '<h1>어쩌라구요</h1>';
+      ContentText.innerHTML = '<h1><i>그래서 <br>어~쩌라구요</i></h1>';
       negativeButton.style.display = "none";
       positiveButton.style.display = "none";
       homeButton.style.display = "block";

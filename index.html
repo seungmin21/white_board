@@ -52,26 +52,13 @@
     const negativeButton = document.getElementById('negative-button');
     const positiveButton = document.getElementById('positive-button');
     const ContentText = document.getElementById('Content-text');
+    const homeButton = document.getElementById('home-button');
    
     // 부정 버튼 클릭 시 기능
     negativeButton.addEventListener('click', () => {
       ContentText.innerHTML = '<h1>어쩌라구요</h1>';
       negativeButton.style.display = "none";
       positiveButton.style.display = "none";   
-      
-      let element = document.createElement('button')
-      element.textContent = "처음으로"
-      element.id = 'home-button';
-      root.appendChild(element)
-
-      const homeButton = document.getElementById('home-button');
-      // console.dir(homeButton);
-      homeButton.addEventListener('click', () => {
-        ContentText.innerHTML = '';
-        negativeButton.style.display = 'block';
-        positiveButton.style.display = 'block';
-        homeButton.style.display = 'none';
-      })
     })
     
     // 긍정 버튼 클릭 시 기능
@@ -79,25 +66,6 @@
       ContentText.innerHTML = '<h1>아~ 그래요?</h1>'
       negativeButton.style.display = "none";
       positiveButton.style.display = "none";
-      
-      let element = document.createElement('button')
-      element.textContent = "처음으로"
-      // id 작명시 유의사항 태그로 경로를 작성하는게 아니라
-      // 선언한 변수명으로 id 경로를 따야 참조 에러가 안난다.
-      element.id = 'home-button';
-      root.appendChild(element)
-      
-      // 밖에 선언을 하면 typeerror가 나온다.
-      // 즉 이 변수 선언을 찾지 못하는 상태가 되기 때문에
-      // 기능 실행문 안에 넣는 것이 정답이다.
-      const homeButton = document.getElementById('home-button');
-
-      homeButton.addEventListener('click', () => {
-        ContentText.innerHTML = '';
-        negativeButton.style.display = 'block';
-        positiveButton.style.display = 'block';
-        homeButton.style.display = 'none';
-      })
     })
 
   </script>

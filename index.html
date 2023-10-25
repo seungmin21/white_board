@@ -32,13 +32,18 @@
     h1 {
       font-size: 34px;
     }
+    button {
+      background-color: black;
+    }
   </style>
 </head>
 <body>
   <div id="root">
     <div id="button-container">
-      <button id="negative-button">부정</button>
-      <button id="positive-button">긍정</button>
+      <input type="button" id="negative-button" value="부정">
+      <input type="button" id="positive-button" value="긍정">
+      <!-- <button id="negative-button">부정</button> -->
+      <!-- <button id="positive-button">긍정</button> -->
     </div>
     <div id="Content-text"></div>
   </div>
@@ -55,6 +60,7 @@
       ContentText.innerHTML = '<h1>어쩌라구요</h1>';
       negativeButton.style.display = "none";
       positiveButton.style.display = "none";
+      let element = document.createElement('button')
     })
 
     positiveButton.addEventListener('click', () => {

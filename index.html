@@ -47,7 +47,7 @@
   </div>
   <script>
     const root = document.getElementById('root');
-    // console.dir(root);
+    console.dir(root);
 
     const negativeButton = document.getElementById('negative-button');
     const positiveButton = document.getElementById('positive-button');
@@ -61,6 +61,7 @@
       
       let element = document.createElement('button')
           element.textContent = "처음으로"
+          element.id = 'backButton';
         root.appendChild(element)
     })
 

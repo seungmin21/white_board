@@ -54,6 +54,7 @@
     const ContentText = document.getElementById('Content-text');
     const homeButton = document.getElementById('home-button');
 
+    // 부정 버튼 클릭 시 기능
     negativeButton.addEventListener('click', () => {
       ContentText.innerHTML = '<h1>어쩌라구요</h1>';
       negativeButton.style.display = "none";
@@ -65,6 +66,7 @@
         root.appendChild(element)
     })
 
+    // 긍정 버튼 클릭 시 기능
     positiveButton.addEventListener('click', () => {
       ContentText.innerHTML = '<h1>아~ 그래요?</h1>'
       negativeButton.style.display = "none";
@@ -74,10 +76,11 @@
           element.textContent = "처음으로"
           // id 작명시 유의사항 태그로 경로를 작성하는게 아니라
           // 선언한 변수명으로 id 경로를 따야 참조 에러가 안난다.
-          element.id = 'backButton';
+          element.id = 'back-button';
         root.appendChild(element)
     })
 
+    
   </script>
 </body>
 </html>

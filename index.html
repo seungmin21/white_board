@@ -29,6 +29,9 @@
       border-radius: 15px;
       margin-left: 10px;
     }
+    h1 {
+      font-size: 34px;
+    }
   </style>
 </head>
 <body>
@@ -50,6 +53,12 @@
 
     negativeButton.addEventListener('click', () => {
       ContentText.innerHTML = '<h1>어쩌라구요</h1>';
+      negativeButton.style.display = "none";
+      positiveButton.style.display = "none";
+    })
+
+    positiveButton.addEventListener('click', () => {
+      ContentText.innerHTML = '<h1>아~ 그래요?</h1>'
       negativeButton.style.display = "none";
       positiveButton.style.display = "none";
     })

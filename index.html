@@ -32,8 +32,11 @@
     h1 {
       font-size: 34px;
     }
-    button {
-      background-color: skyblue;
+    #home-button {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      display: none;
     }
   </style>
 </head>
@@ -44,6 +47,7 @@
       <input type="button" id="positive-button" value="긍정">
     </div>
     <div id="Content-text"></div>
+    <button id="home-button">처음으로</button>
   </div>
   <script>
     const root = document.getElementById('root');
@@ -58,7 +62,8 @@
     negativeButton.addEventListener('click', () => {
       ContentText.innerHTML = '<h1>어쩌라구요</h1>';
       negativeButton.style.display = "none";
-      positiveButton.style.display = "none";   
+      positiveButton.style.display = "none";
+      homeButton.style.display = "block";
     })
     
     // 긍정 버튼 클릭 시 기능

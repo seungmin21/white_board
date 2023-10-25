@@ -9,6 +9,7 @@
     #root {
       width: 100vw;
       height: 100vh;
+      box-sizing: border-box;
       /* flex set */
       display: flex;
       justify-content: center;
@@ -33,8 +34,12 @@
 </head>
 <body>
   <div id="root">
-    <div id="negative-button"></div>
-    <div id="positive-button"></div>
+    <div id="button-container">
+      <button id="negative-button"></button>
+      <button id="positive-button"></button>
+    </div>
+    <div id="Content-text"></div>
+    <button id="home-button">처음으로</button>
   </div>
   <script>
     const root = document.getElementById('root');
@@ -42,10 +47,9 @@
 
     const negativeButton = document.getElementById('negative-button');
     const positiveButton = document.getElementById('positive-button');
+    const ContentText = document.getElementById('Content-text');
+    const homeButton = document.getElementById('home-button');
 
-    negativeButton.addEventListener('click', () => {
-      
-    })
   </script>
 </body>
 </html>

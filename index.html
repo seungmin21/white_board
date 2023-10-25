@@ -65,7 +65,13 @@
       root.appendChild(element)
 
       const homeButton = document.getElementById('home-button');
-      console.dir(homeButton);
+      // console.dir(homeButton);
+      homeButton.addEventListener('click', () => {
+        ContentText.innerHTML = '';
+        negativeButton.style.display = 'block';
+        positiveButton.style.display = 'block';
+        homeButton.style.display = 'none';
+      })
     })
     
     // 긍정 버튼 클릭 시 기능
